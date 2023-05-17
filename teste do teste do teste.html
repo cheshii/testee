@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>é só teste meu mano</title>
+    <style>
+        body {
+            font: normal 13pt monospace;
+            color: black;
+            background-color: rgb(65, 63, 63);
+            text-align: center;
+            margin-top: 350px;
+            background-image: url(6ha49j.png);
+            background-size: 90pc;
+        }
+        button {
+            font: bold 18pt monospace;
+            border-radius: 6px;
+            width: 6pc;
+            height: 3pc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>vdd que vc é?</h1>
+    <div id="teste">
+        <button id="sim" onmouseover="direcionar()">Sim</button>
+        <button id="nao" onmouseenter="aoEntrar()">Não</button>   
+    </div>
+
+    <script>
+        function aoEntrar() {
+            var nao = window.document.getElementById('nao')
+            var randomX = Math.floor(Math.random() * window.innerWidth)
+            var randomY = Math.floor(Math.random() * window.innerHeight)
+            nao.style.position = "absolute"
+            nao.style.top = randomY + "px"
+            nao.style.left = randomX + "px"
+        }
+        
+        function direcionar() {
+            var sim = window.document.getElementById('sim')
+            sim.addEventListener("click", function() {
+                window.location.href = "https://www.youtube.com/watch?v=tTs0d88OZR8"
+            })
+        }
+    </script>
+</body>
+</html>
+
